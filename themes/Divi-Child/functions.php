@@ -9,6 +9,8 @@ function my_theme_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    wp_enqueue_style('main', get_stylesheet_directory_uri() . '/styles/css/main.css');
+
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function use_gd_editor($array) { 
