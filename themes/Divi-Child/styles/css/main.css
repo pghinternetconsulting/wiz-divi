@@ -1,3 +1,96 @@
 body {
-  border: solid 30px red !important;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+  color: #334A98;
+}
+
+h2 {
+  font-size: 60px !important;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 30px !important;
+  font-weight: 200;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+/* FRONTPAGE */
+/* Hero Slider */
+/* Top Bar */
+.et_pb_row.top-bar {
+  max-width: 100%;
+  width: 100%;
+  background-color: #334A98;
+  padding: 0px;
+  display: flex;
+}
+@media (max-width: 980px) {
+  .et_pb_row.top-bar .et_pb_column {
+    margin-bottom: 0px;
+  }
+}
+
+.top-bar > .et-last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-bar-contact a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #D32000;
+  padding: 4px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.top-bar-contact a:hover {
+  background-color: #AD2020;
+}
+
+.top-bar-menu {
+  padding: 0px 6px;
+}
+.top-bar-menu a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.top-bar-menu a:hover {
+  color: #5998df;
+}
+
+/* Main Menu */
+@media (min-width: 980px) {
+  #menu-primary-menu > li {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  #menu-primary-menu > li a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+  }
+  #menu-primary-menu > li a:hover {
+    color: #D32000;
+  }
 }
