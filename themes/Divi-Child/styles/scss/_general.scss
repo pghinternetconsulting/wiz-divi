@@ -159,13 +159,13 @@ a.btn-secondary {
 
 
 /* Testimonials */
-.dica-image-container {
+.testimonial-carousel .dica-image-container {
   margin-top: -110px;
 }
-.swiper-wrapper{
+.testimonial-carousel .swiper-wrapper{
   padding-top: 60px;
 }
-.dica-image-container img{
+.testimonial-carousel .dica-image-container img{
   width: 100px;
 }
 
@@ -176,9 +176,4 @@ a.btn-secondary {
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.grid-footer-icons{
-  display: grid; 
-  grid-template-columns: 20px 1fr; 
 }
