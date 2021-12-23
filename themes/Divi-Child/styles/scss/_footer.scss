@@ -1,0 +1,26 @@
+
+// Footer Column left side full width left background.
+.footer > .et_pb_row {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 980px) {
+  .footer-left {
+    padding-left: 10% !important;
+  }
+
+  .footer-right {
+    padding-right: 10% !important;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer-left {
+    padding-left: calc((100% - 1240px) / 2) !important;
+  }
+
+  .footer-right {
+    padding-right: calc((100% - 1240px) / 2) !important;
+  }
+}
