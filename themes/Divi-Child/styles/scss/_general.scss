@@ -30,6 +30,11 @@ h4 {
 p {
   font-family: $fontP;
   font-weight: 300;
+  font-size: 18px;
+}
+
+.font-sz-16 p {
+  font-size: 16px;
 }
 
 @media (max-width: 980px) {
@@ -48,6 +53,34 @@ p {
 
 .w-100 {
   width: 100%;
+}
+.font-50 h2 {
+  font-size: 50px !important;
+  font-weight: 300;
+}
+
+.col-100-h {
+  .et_pb_module.et_pb_image {
+    display: flex;
+    height: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+.d-flex-col {
+  flex-direction: column;
+}
+.justify-content--space-between {
+  justify-content: space-between;
+}
+.justify-content--center {
+  justify-content: center;
 }
 /* BUTTONS */
 a.btn-primary {
@@ -157,23 +190,33 @@ a.btn-secondary {
   }
 }
 
-
 /* Testimonials */
 .testimonial-carousel .dica-image-container {
   margin-top: -110px;
+  padding-bottom: 20px;
 }
-.testimonial-carousel .swiper-wrapper{
+.testimonial-carousel .swiper-wrapper {
   padding-top: 60px;
 }
-.testimonial-carousel .dica-image-container img{
+.testimonial-carousel .dica-image-container img {
   width: 100px;
 }
 
+/* .swiper-slide-prev, .swiper-slide-next{
+  .dica-image-container img{
+    display: none !important;
+  }
+}  */
+
 /* Services Section */
-.grid-services{
+.grid-services {
   display: grid;
-  grid-template-columns: 50px 1fr;
-  gap: 20px;
+  grid-template-columns: 40px 1fr;
+  gap: 15px;
   align-items: center;
   margin-bottom: 20px;
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
