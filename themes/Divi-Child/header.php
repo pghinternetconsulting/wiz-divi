@@ -25,7 +25,7 @@
 	</script>
 
 	<?php wp_head(); ?>
-	<script src="js/letters.js"></script>
+<!-- 	<script src="wp-content/themes/Divi-Child/js/letters.js"></script> -->
 </head>
 <body <?php body_class(); ?>>
 <?php

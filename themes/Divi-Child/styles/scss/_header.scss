@@ -5,10 +5,17 @@
   background-color: $primary;
   padding: 0px;
   display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
   @media (max-width: 980px) {
     .et_pb_column {
       margin-bottom: 0px;
     }
+  }
+  .top-bar-col1{
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -16,7 +23,7 @@
   display: flex;
   justify-content: flex-end;
 }
-.top-bar-contact a {
+.top-bar-contact a.top-bar-contact {
   width: fit-content;
   background-color: $secondary;
   padding: 4px 20px;
@@ -29,6 +36,13 @@
 
   &:hover {
     background-color: $secondary-variant;
+  }
+  @media (min-width:769px){
+    &::before{
+      content: "Contact us: " ;
+      width: fit-content;
+      height: fit-content;
+    }
   }
 }
 
@@ -43,6 +57,16 @@
       color: $primary-variant--light;
     }
   }
+}
+
+/* Mobile Menu */
+@media (max-width: 980px) {
+ul#mobile_menu1 {
+  margin-top: 18px;
+  a{
+    font-weight: 400;
+  }
+}
 }
 
 /* Main Menu */
