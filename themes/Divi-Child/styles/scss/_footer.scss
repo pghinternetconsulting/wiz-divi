@@ -139,3 +139,10 @@
 .footer-right .et_pb_menu .et_pb_menu__menu {
   display: block;
 }
+.footer-right a {
+  color: #fff;
+
+  &:hover {
+    color: $primary-variant--light;
+  }
+}

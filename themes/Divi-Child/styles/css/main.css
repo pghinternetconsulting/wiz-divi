@@ -813,3 +813,10 @@ form.search-container {
 .footer-right .et_pb_menu .et_pb_menu__menu {
   display: block;
 }
+
+.footer-right a {
+  color: #fff;
+}
+.footer-right a:hover {
+  color: #5998df;
+}
