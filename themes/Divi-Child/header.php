@@ -26,7 +26,16 @@
 
 	<?php wp_head(); ?>
 <!-- 	<script src="wp-content/themes/Divi-Child/js/letters.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
 </head>
+
 <body <?php body_class(); ?>>
 <?php
 	wp_body_open();
