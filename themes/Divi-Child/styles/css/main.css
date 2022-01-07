@@ -209,7 +209,7 @@ a.btn-secondary:hover {
   width: -moz-fit-content;
   width: fit-content;
   background-color: #D32000;
-  padding: 4px 20px;
+  padding: 5px 20px;
   color: #fff;
   text-transform: uppercase;
   display: block;
@@ -315,14 +315,14 @@ input.search-box {
   background: transparent !important;
 }
 .search-box + label .search-icon {
-  color: black;
+  color: #fff;
 }
 .search-box:hover {
-  color: #111;
+  color: #fff;
   background: transparent !important;
 }
 .search-box:hover + label .search-icon {
-  color: #111;
+  color: #fff;
 }
 .search-box:focus {
   transition: width 0.5s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.5s, background 0.5s;
@@ -336,7 +336,7 @@ input.search-box {
   border-bottom: 1px solid #fff !important;
 }
 .search-box:focus + label .search-icon {
-  color: black !important;
+  color: #fff !important;
 }
 .search-box:not(:focus) {
   text-indent: -5000px;
@@ -355,6 +355,7 @@ input.search-box {
   top: -25px;
   font-weight: 700;
   font-size: 16px;
+  display: block;
 }
 .search-icon:hover {
   color: #fff;
@@ -407,15 +408,15 @@ form.search-container {
   background-color: #334A98;
   margin-top: 20px;
 }
-#panel .mob-search-box {
+#panel .mob-search-box form {
   display: flex;
 }
-#panel .mob-search-box #s {
+#panel .mob-search-box form #s {
   width: 100%;
   border: 1px solid #ffffff;
   padding: 10px 15px;
 }
-#panel .mob-search-box #searchsubmit {
+#panel .mob-search-box form #searchsubmit {
   background-color: #D32000 !important;
   color: #ffffff;
   font-weight: bold;

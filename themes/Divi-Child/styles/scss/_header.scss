@@ -29,7 +29,7 @@
 .top-bar-contact a.top-bar-contact {
   width: fit-content;
   background-color: $secondary;
-  padding: 4px 20px;
+  padding: 5px 20px;
   color: #fff;
   text-transform: uppercase;
   display: block;
@@ -136,13 +136,13 @@ input.search-box {
   background: transparent !important;
 
   & + label .search-icon {
-    color: black;
+    color: #fff;
   }
   &:hover {
-    color: #111;
+    color: #fff;
     background: transparent !important;
     & + label .search-icon {
-      color: #111;
+      color: #fff;
     }
   }
   &:focus {
@@ -157,7 +157,7 @@ input.search-box {
     color: #fff !important;
     border-bottom: 1px solid #fff !important;
     & + label .search-icon {
-      color: black !important;
+      color: #fff !important;
     }
   }
   &:not(:focus) {
@@ -177,6 +177,7 @@ input.search-box {
   top: -25px;
   font-weight: 700;
   font-size: 16px;
+  display: block;
   &:hover {
     color: #fff;
     background: transparent !important;
@@ -223,7 +224,7 @@ form.search-container {
   display: none;
   background-color: $primary;
   margin-top: 20px;
-  .mob-search-box {
+  .mob-search-box form {
     display: flex;
     #s {
       width: 100%;
