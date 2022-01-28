@@ -14,6 +14,15 @@ h6 {
   color: $primary;
 }
 
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  @media (max-width: 980px) {
+    font-size: 45px !important;
+    font-weight: 700;
+  }
+}
+
 h2 {
   font-size: 60px !important;
   font-weight: 300;
@@ -80,6 +89,10 @@ p {
       height: 100%;
     }
   }
+}
+
+.padding-0 {
+  padding: 0px !important;
 }
 
 .d-flex {
@@ -152,6 +165,75 @@ a.btn-secondary {
     @media (max-width: 980px) {
       font-size: 16px;
       padding: 10px 20px;
+    }
+  }
+}
+
+/* SERVICES */
+.blurb-services {
+  h4 {
+    font-size: 30px !important;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+    @media (max-width: 980px) {
+      font-size: 25px !important;
+      letter-spacing: 0.2rem;
+    }
+  }
+  a {
+    color: #000;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.service-description {
+  h3 {
+    font-size: 40px !important;
+    @media (max-width: 980px) {
+      font-size: 30px !important;
+    }
+  }
+  > div {
+    @media (max-width: 980px) {
+      .et_pb_column {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+/* CTAs */
+
+.cta-fullwidth {
+  background-image: url("/wp-content/uploads/2021/12/section-back-blue.jpg");
+  padding: 150px 0px !important;
+  @media (max-width: 980px) {
+    padding: 100px 0px !important;
+  }
+  display: flex;
+  > div {
+    @media (min-width: 1300px) {
+      width: 65%;
+    }
+    @media (max-width: 1299px) {
+      width: 100%;
+    }
+
+    > div .et_pb_text_inner {
+      text-align: center;
+      @media (max-width: 980px) {
+        h2 {
+          font-size: 40px !important;
+        }
+      }
+    }
+    > div {
+      text-align: center;
+      a {
+        width: 380px;
+      }
     }
   }
 }
