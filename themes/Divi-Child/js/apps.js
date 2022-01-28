@@ -1,3 +1,4 @@
+// MORE / LESS TEXT  
 $(document).ready(function() {
     // Configure/customize these variables.
     var showChar = 300;  // How many characters are shown by default
@@ -34,3 +35,4 @@ $(document).ready(function() {
         return false;
     });
 });
+// END MORE / LESS TEXT  
