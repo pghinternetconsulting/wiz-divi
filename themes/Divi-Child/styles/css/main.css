@@ -256,6 +256,18 @@ a.btn-secondary:hover {
   width: 380px;
 }
 
+/* READ MORE Styles */
+.morecontent span {
+  display: none;
+}
+
+.morelink {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334a98 !important;
+}
+
 /* Top Bar */
 .et_pb_row.top-bar {
   max-width: 100%;
