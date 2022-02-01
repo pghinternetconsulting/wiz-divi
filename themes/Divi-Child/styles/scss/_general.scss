@@ -1,6 +1,6 @@
 body {
   color: $textColor;
-  font-family: $fontP;
+  font-family: $fontP !important;
   font-weight: 300;
 }
 
@@ -56,8 +56,13 @@ p {
 }
 
 .txt-white {
-  color: #fff;
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     color: #fff;
   }
 }
@@ -97,10 +102,16 @@ p {
   }
 }
 
+/* LAYOUT */
 .padding-0 {
   padding: 0px !important;
 }
 
+.m-0-mob {
+  @media (max-width: 980px) {
+    margin: 0px !important;
+  }
+}
 .d-flex {
   display: flex;
 }
@@ -113,6 +124,7 @@ p {
 .justify-content--center {
   justify-content: center;
 }
+
 /* BUTTONS */
 a.btn-primary {
   background-color: $primary;
@@ -184,6 +196,12 @@ a.btn-secondary {
     @media (max-width: 980px) {
       font-size: 25px !important;
       letter-spacing: 0.2rem;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        color: #000;
+      }
     }
   }
   a {
@@ -265,7 +283,20 @@ h2.gform_submission_error {
 }
 .contact-form {
   background-color: #f2f2f2;
-  padding: 30px;
+  padding: 50px;
+  @media (max-width: 980px) {
+    padding: 25px;
+  }
+  h2.gform_title {
+    font-size: 30px !important;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  input,
+  textarea,
+  select {
+    font-family: $fontP !important;
+  }
 
   input[type="text"] {
     border: 1px solid #707070;
@@ -279,17 +310,75 @@ h2.gform_submission_error {
   }
   .gform_footer {
     text-align: right;
-    padding: 16px 0px 0px;
+    margin: 6px 0px 0px 0px !important;
+    padding: 16px 0px 0px 0px !important;
     input {
       margin-bottom: 8px;
       background-color: #334a98;
       border: 0;
       padding: 10px;
       width: 50%;
+      cursor: pointer;
       @media (max-width: 980px) {
         width: 100%;
       }
       color: #fff;
+      height: 55px;
+      font-size: 18px;
+      font-weight: 500;
+
+      &:hover {
+        background-color: $primary-variant;
+      }
+    }
+  }
+}
+
+/* CLIENT PORTAL */
+.portal-row-buttons {
+  > div {
+    text-align: center;
+    > div {
+      width: 100%;
+    }
+  }
+}
+a.btn-portal {
+  background-color: $primary;
+  text-align: center;
+  border: 0px !important;
+  border-radius: 0;
+  color: #fff;
+  font-size: 18px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: 24px !important;
+
+  &:hover {
+    background-color: $primary-variant !important;
+    border: 0px !important;
+  }
+}
+
+/* USEFUL LINKS */
+.useful-links {
+  ul {
+    color: $primary;
+    @media (max-width: 980px) {
+      padding-bottom: 0em !important;
+    }
+
+    li::marker {
+      font-size: 30px;
+    }
+    li > a {
+      color: #000;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
