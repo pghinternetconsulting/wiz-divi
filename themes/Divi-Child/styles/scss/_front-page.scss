@@ -108,9 +108,14 @@
   gap: 15px;
   align-items: center;
   margin-bottom: 20px;
-  p {
+
+  a {
+    color: #fff;
     font-size: 18px;
     font-weight: 400;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 /* HERO ANIMATED LETTERS */

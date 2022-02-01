@@ -787,9 +787,13 @@ form.search-container {
   align-items: center;
   margin-bottom: 20px;
 }
-.grid-it-services p {
+.grid-it-services a {
+  color: #fff;
   font-size: 18px;
   font-weight: 400;
+}
+.grid-it-services a:hover {
+  opacity: 0.7;
 }
 
 /* HERO ANIMATED LETTERS */
