@@ -400,6 +400,11 @@ a.btn-portal:hover {
   color: #334a98;
 }
 
+/* TESTIMONALS CAROUSEL */
+.dica_divi_carousel_2.dica_divi_carousel .dica_divi_carouselitem {
+  height: -webkit-fill-available;
+}
+
 /* Top Bar */
 .et_pb_row.top-bar {
   max-width: 100%;
