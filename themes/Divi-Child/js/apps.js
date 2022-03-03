@@ -3,8 +3,8 @@ $(document).ready(function() {
     // Configure/customize these variables.
     var showChar = 300;  // How many characters are shown by default
     var ellipsestext = "...";
-    var moretext = "(+)";
-    var lesstext = "(-)";
+    var moretext = "(+ expand)";
+    var lesstext = "(- collapse)";
     
 
     $('.more').each(function() {

@@ -405,6 +405,29 @@ a.btn-portal:hover {
   height: -webkit-fill-available;
 }
 
+/* BLOG */
+.single-post h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+@media (max-width: 980px) {
+  .single-post h1 {
+    font-size: 30px !important;
+  }
+}
+.single-post img {
+  width: 100%;
+}
+.single-post article.et_pb_post {
+  margin-bottom: 0px !important;
+  padding-bottom: 60px !important;
+}
+@media (max-width: 980px) {
+  .single-post .container {
+    padding-top: 25px !important;
+  }
+}
+
 /* Top Bar */
 .et_pb_row.top-bar {
   max-width: 100%;
@@ -558,6 +581,10 @@ a.mobile-toggle {
     opacity: 1 !important;
   }
 }
+header {
+  border-bottom: 1px solid #f2f2f2;
+}
+
 /* Search Bar */
 input.search-box {
   border: 0;

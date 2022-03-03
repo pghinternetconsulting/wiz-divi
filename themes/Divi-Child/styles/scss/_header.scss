@@ -144,7 +144,9 @@ a.mobile-toggle {
     }
   }
 }
-
+header {
+  border-bottom: 1px solid #f2f2f2;
+}
 /* Search Bar */
 $tl: 0.5s; // transition length
 input.search-box {
