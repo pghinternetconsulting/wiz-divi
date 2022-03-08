@@ -730,7 +730,7 @@ form.search-container {
 }
 @media (max-width: 980px) {
   .hero-slider .et_pb_slide_content .wordCarousel div li {
-    font-size: 55px;
+    font-size: 48px;
   }
   .hero-slider .et_pb_slide_content p {
     font-size: 60px !important;
@@ -787,6 +787,12 @@ form.search-container {
   width: 100px;
 }
 
+.dica-item-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Services Section */
 @media (max-width: 768px) {
   .home-services--icon {
@@ -840,8 +846,8 @@ form.search-container {
 }
 @media (max-width: 980px) {
   .wordCarousel div {
-    height: 55px;
-    padding-top: 0px;
+    height: 65px;
+    padding-top: 10px;
     margin-top: -5px;
   }
 }
@@ -871,8 +877,8 @@ form.search-container {
 }
 
 .flip3 {
-  -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
-          animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  -webkit-animation: flip3 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+          animation: flip3 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
 
 .flip4 {
@@ -921,7 +927,7 @@ form.search-container {
     margin-top: -270px;
   }
 }
-@-webkit-keyframes flip3 {
+/* @keyframes flip3 {
   0% {
     margin-top: -270px;
   }
@@ -945,32 +951,82 @@ form.search-container {
   }
   100% {
     margin-top: -270px;
+  }
+} */
+@-webkit-keyframes flip3 {
+  0% {
+    margin-top: -450px;
+  }
+  5% {
+    margin-top: -360px;
+  }
+  20% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  40% {
+    margin-top: -270px;
+  }
+  45% {
+    margin-top: -180px;
+  }
+  60% {
+    margin-top: -180px;
+  }
+  65% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: -90px;
+  }
+  85% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -450px;
   }
 }
 @keyframes flip3 {
   0% {
-    margin-top: -270px;
+    margin-top: -450px;
   }
   5% {
+    margin-top: -360px;
+  }
+  20% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  40% {
+    margin-top: -270px;
+  }
+  45% {
     margin-top: -180px;
   }
-  33% {
+  60% {
     margin-top: -180px;
   }
-  38% {
+  65% {
     margin-top: -90px;
   }
-  66% {
+  80% {
     margin-top: -90px;
   }
-  71% {
+  85% {
     margin-top: 0px;
   }
   99.99% {
     margin-top: 0px;
   }
   100% {
-    margin-top: -270px;
+    margin-top: -450px;
   }
 }
 @-webkit-keyframes flip4 {
