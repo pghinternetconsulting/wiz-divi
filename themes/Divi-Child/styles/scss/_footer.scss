@@ -1,3 +1,8 @@
+/* Footer icons */
+.grid-footer-icons {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
 
 // Footer Column left side full width left background.
 .footer > .et_pb_row {
@@ -5,13 +10,31 @@
   max-width: 100%;
 }
 
+.footer {
+  p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .et-pb-icon:hover {
+    opacity: 0.7;
+  }
+  h4 {
+    font-size: 24px !important;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+}
+
 @media (min-width: 980px) {
   .footer-left {
     padding-left: 10% !important;
+    padding-top: 70px;
   }
 
   .footer-right {
     padding-right: 10% !important;
+    padding-left: 5% !important;
+    padding-top: 40px;
   }
 }
 
@@ -22,5 +45,104 @@
 
   .footer-right {
     padding-right: calc((100% - 1240px) / 2) !important;
+  }
+}
+
+/* Mobile Footer Columns Order */
+
+@media (max-width: 768px) {
+  .footer {
+    &-col1 {
+      order: 2;
+      width: 50% !important;
+    }
+    &-col2 {
+      display: none;
+    }
+    &-col3 {
+      order: 3;
+      width: 50% !important;
+    }
+    &-col4 {
+      order: 1;
+      padding-bottom: 30px;
+      width: 100% !important;
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 980px) {
+  .footer {
+    &-col4 {
+      padding-top: 30px;
+    }
+  }
+}
+
+/* Footer Menu Services */
+.footer-menu-02 {
+  background-color: transparent !important;
+  ul {
+    flex-direction: column;
+
+    li {
+      @media (max-width: 768px) {
+        padding-bottom: 15px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        font-family: $fontP;
+      }
+    }
+  }
+  .et_pb_menu .et_pb_menu__wrap {
+    flex: 0 0 auto;
+    margin-left: 30px;
+  }
+}
+.footer-right {
+  .et_pb_menu__wrap {
+    justify-content: flex-start !important;
+  }
+}
+.footer-menu-01 {
+  background-color: transparent !important;
+  .et_pb_menu__wrap {
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+  ul {
+    flex-direction: column;
+
+    li {
+      @media (max-width: 768px) {
+        padding-bottom: 15px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: $fontP;
+      }
+    }
+  }
+}
+@media (min-width: 769px) {
+  .et_pb_menu__menu > nav > ul > li.footer-menu-services {
+    display: none;
+  }
+}
+
+.footer-right .et_pb_menu .et_pb_menu__menu {
+  display: block;
+}
+.footer-right a {
+  color: #fff;
+
+  &:hover {
+    color: $primary-variant--light;
   }
 }
