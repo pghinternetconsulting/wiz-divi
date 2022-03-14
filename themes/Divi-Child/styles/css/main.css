@@ -718,7 +718,7 @@ form.search-container {
 .hero-slider .et_pb_slider_fullwidth_off .et_pb_slide_description {
   padding: 16% 0%;
 }
-.hero-slider .et_pb_slide_content h2 {
+.hero-slider .et_pb_slide_content h1 {
   font-size: 80px !important;
   font-weight: 700;
   max-width: 600px;
@@ -736,7 +736,7 @@ form.search-container {
     font-size: 60px !important;
     line-height: 2rem;
   }
-  .hero-slider .et_pb_slide_content h2 {
+  .hero-slider .et_pb_slide_content h1 {
     font-size: 50px !important;
   }
 }
