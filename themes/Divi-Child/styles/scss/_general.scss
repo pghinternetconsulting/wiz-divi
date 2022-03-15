@@ -235,6 +235,7 @@ a.btn-secondary {
   padding: 150px 0px !important;
   @media (max-width: 980px) {
     padding: 100px 0px !important;
+    background-image: linear-gradient(180deg, #001121 0%, #023248 100%);
   }
   display: flex;
   > div {
