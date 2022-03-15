@@ -44,4 +44,17 @@ function wpbsearchform_mob( $form ) {
    
 add_shortcode('wpbsearch_mob', 'wpbsearchform_mob');
 
+
+// Removes et_add_viewport_meta from the wp_head phase
+add_action('after_setup_theme', 'db_remove_et_viewport_meta');
+add_action('wp_head', 'db_enable_pinch_zoom');
+
+function db_remove_et_viewport_meta() {
+	remove_action('wp_head', 'et_add_viewport_meta');
+}
+
+function db_enable_pinch_zoom() {
+	echo '<meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1.0, minimum-scale=0.1, maximum-scale=10.0">';
+}
+
 ?>
