@@ -478,7 +478,7 @@ a.btn-portal:hover {
   background-color: #ad2020;
 }
 .top-bar-contact a.top-bar-contact::before {
-  content: "Contact us: ";
+  content: "Call us: ";
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -508,7 +508,7 @@ a.btn-portal:hover {
   background-color: #ad2020;
 }
 .et_pb_row.top-bar-mobile .top-bar-contact a.top-bar-contact::before {
-  content: "Contact us: ";
+  content: "Call us: ";
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
