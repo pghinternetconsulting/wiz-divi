@@ -412,3 +412,117 @@ a.btn-portal {
     }
   }
 }
+
+/* BLOG */
+//////////////////////////
+
+.related-posts {
+  h2.entry-title {
+    font-size: 21px !important;
+    a {
+      color: $primary;
+    }
+  }
+  .et_pb_image_container {
+    margin: 0px !important;
+  }
+  .et_pb_blog_grid .et_pb_post {
+    padding: 0px !important;
+  }
+  @media (max-width: 980px) {
+    .post-content-inner {
+      display: none;
+    }
+  }
+}
+@media (min-width: 981px) {
+  .et_pb_gutters3
+    .et_pb_column_4_4
+    .et_pb_blog_grid
+    .column.size-1of3
+    .et_pb_post {
+    margin-bottom: 5% !important;
+  }
+}
+/* BLOG - READ MORE BUTTON  */
+
+.et_pb_post a.more-link {
+  color: $primary;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: capitalize;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  padding-left: 0px;
+}
+
+.et_pb_post a.more-link:hover {
+  background: transparent;
+  color: $primary;
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.et_pb_title_container h1 {
+  font-size: 50px;
+  padding-bottom: 30px;
+  @media (max-width: 980px) {
+    font-size: 30px !important;
+    font-weight: 800;
+  }
+}
+
+.blog-featured-post {
+  h2.entry-title {
+    color: $primary !important;
+    font-size: 58px !important;
+    @media (max-width: 980px) {
+      font-size: 40px !important;
+    }
+  }
+}
+.post-image {
+  height: 100% !important;
+  > div {
+    height: 100% !important;
+    article {
+      height: 100% !important;
+      a {
+        height: 100%;
+      }
+    }
+  }
+  h2.entry-title {
+    display: none !important;
+  }
+  img {
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    object-fit: cover;
+  }
+  article {
+    padding: 0px !important;
+    margin: 0px !important;
+    a {
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+  }
+}
+@media (min-width: 980px) {
+  .related-posts {
+    article.et_pb_post {
+      min-height: 550px !important;
+    }
+  }
+}
+.bg-secondary {
+  background-color: $primary !important;
+}
+
+.wiz-blog-posts {
+  h2 {
+    font-size: 25px !important;
+  }
+}
