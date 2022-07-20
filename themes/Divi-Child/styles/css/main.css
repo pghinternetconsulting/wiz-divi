@@ -428,6 +428,10 @@ a.btn-portal:hover {
     padding-top: 25px !important;
   }
 }
+.single-post .et_pb_post_content a {
+  text-decoration: underline !important;
+  font-weight: 500 !important;
+}
 
 /* BLOG */
 .related-posts h2.entry-title {

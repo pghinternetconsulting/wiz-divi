@@ -11,7 +11,7 @@ function my_theme_enqueue_styles()
         array($parent_style),
         wp_get_theme()->get('Version')
     );
-    wp_enqueue_style('main', get_stylesheet_directory_uri() . '/styles/css/main.css?v1.2');
+    wp_enqueue_style('main', get_stylesheet_directory_uri() . '/styles/css/main.css?v1.3');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 function use_gd_editor($array)
